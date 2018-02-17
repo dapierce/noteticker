@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import ContentItem from './ContentItem.js';
+import ContentItem from './ContentItem';
+import ContentNew from './ContentNew';
 
 class Content extends Component {
   render() {
     return (
       <div className="content">
-        <ContentItem />
-        <ContentItem />
-        <ContentItem />
+        <div className="content-items">
+          <ContentItem />
+          <ContentItem />
+          <ContentItem />
+        </div>
+        <ContentNew />
       </div>
     );
   }
