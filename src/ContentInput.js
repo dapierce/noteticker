@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-class ContentNew extends Component {
+class ContentInput extends Component {
 
 
   render() {
     return (
-      <div className="content-new">
+      <div className="content-input">
         <textarea className="new-content-input" />
         <button className="new-content-button" onClick={this.handleAddEntry}>Add</button>
       </div>
@@ -13,4 +13,4 @@ class ContentNew extends Component {
   }
 }
 
-export default ContentNew;
+export default ContentInput;

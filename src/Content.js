@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ContentItem from './ContentItem';
-import ContentNew from './ContentNew';
+import ContentItem from './ContentItem.js';
+import ContentInput from './ContentInput.js';
 
 class Content extends Component {
   render() {
@@ -11,7 +11,7 @@ class Content extends Component {
           <ContentItem />
           <ContentItem />
         </div>
-        <ContentNew />
+        <ContentInput />
       </div>
     );
   }
