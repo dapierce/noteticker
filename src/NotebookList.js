@@ -5,11 +5,11 @@ class NotebookList extends Component {
   render() {
     return (
       <div className="notebook-list">
-        <ul>
-          <li>Tasks</li>
+        <ul className="list-tasks">
+          <li>✅ Tasks</li>
         </ul>
         <hr/>
-        <ul>
+        <ul className="list-notebooks">
           <NotebookListItem />
           <NotebookListItem />
         </ul>

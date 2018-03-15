@@ -6,8 +6,8 @@ class ContentInput extends Component {
   render() {
     return (
       <div className="content-input">
-        <textarea className="new-content-input" />
-        <button className="new-content-button" onClick={this.handleAddEntry}>Add</button>
+        <textarea className="content-input-textarea" />
+        <button className="content-input-button" onClick={this.handleAddEntry}>Add</button>
       </div>
     );
   }
