@@ -4,7 +4,7 @@ class NotebookListItem extends Component {
   render() {
     return (
       <li className="notebook-list-item">
-        📓 item
+        <span role="img" aria-label="Notebook">📓</span> item
       </li>
     );
   }

@@ -1,14 +1,9 @@
-/* general rules:
-    - use only relative and percentage values
-    (high DPI should look nice!)
-*/
-
 /* variables */
 
 :root {
-  --panel-width: 220px;
-  --input-height: 4.2em;
-  --input-button-width: 80px;
+  --panel-width: 14rem;
+  --input-height: 4.5rem;
+  --input-button-width: 4rem;
 
   --main-color: #5fc5b4;
   --accent-color: #efefef;
@@ -77,29 +72,28 @@ body {
 }
 
 .content-input textarea {
-  width: calc(100% - .6em);
-  height: calc(var(--input-height) - 2em);
+  height: calc(var(--input-height) - 1.2rem);
   resize: none;
 }
 
 .content-input button {
+  height: var(--input-height);
   margin: 0;
   padding: 0;
   width: 100%;
-  height: var(--input-height);
 }
 
 /* component design */
 
 input, button {
-  border: .1em solid #999;
+  border: 1px solid #999;
   margin: .2em 1em;
   padding: .5em;
   outline: 0;
 }
 
 button {
-  width: 2.5em;
+  width: 2.2rem;
 }
 
 .header h1 {
@@ -109,14 +103,15 @@ button {
 
 .search {
   background: #eee;
+  border-radius: .6rem;
   outline: 0;
-  transition: all .2s ease-in;
+  transition: box-shadow .1s ease-in;
 }
 
 .search:focus {
   background: #fff;
-  border: .1em solid rgb(67, 133, 255);
-  box-shadow: inset 0 0 0em .15em rgb(67, 133, 255);
+  border: 1px solid rgb(67, 133, 255);
+  box-shadow: inset 0 0 0 2px rgb(67, 133, 255);
 }
 
 .notebook-list ul {
@@ -133,7 +128,6 @@ button {
 .notebook-list li:hover {
   background-color: #eee;
   color: #333;
-  transition: .4s all;
 }
 
 .notebook-list li:active {
@@ -152,31 +146,33 @@ button {
 }
 
 .content-input-textarea, .content-input-button {
-  border: .2em solid #555;
+  border: .2rem solid #555;
   margin: 0;
-  padding: .2em;
+  padding: .4rem;
 }
 
 .content-input-textarea {
-  border-top-left-radius: .4em;
-  border-bottom-left-radius: .4em;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border-right: 0;
 }
 
 .content-input-button {
-  border-top-right-radius: .4em;
-  border-bottom-right-radius: .4em;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .content-input-button:hover {
-  background-color: #999;
+  background-color: green;
   color: #eee;
-  transition: .4s all;
+  transition: .2s all;
 }
 
 .content-input-button:active {
-  background-color: #555;
-  color: #eee;
-  padding-top: .4em;
+  background-color: lightgreen;
+  border-color: green;
+  color: #333;
+  padding-top: .2em;
   transition: 0s all;
 }
 

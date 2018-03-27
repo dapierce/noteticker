@@ -6,7 +6,7 @@ class NotebookList extends Component {
     return (
       <div className="notebook-list">
         <ul className="list-tasks">
-          <li>✅ Tasks</li>
+          <li><span role="img" aria-label="Checkmark">✅</span> Tasks</li>
         </ul>
         <hr/>
         <ul className="list-notebooks">
