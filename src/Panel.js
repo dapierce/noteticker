@@ -9,7 +9,7 @@ class Panel extends Component {
         <h1 className="header">Noteticker</h1>
         <Search />
         <NotebookList/>
-        <button className="button-new" title="Create New Notebook">+ New Notebook</button>
+        <button className="button-new" title="Create a New Notebook">+ New Notebook</button>
         <button className="button-prefs" title="Preferences">
           <span role="img" aria-label="Wrench">🔧</span>
         </button>

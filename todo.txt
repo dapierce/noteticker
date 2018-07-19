@@ -1,0 +1,5 @@
+TODO:
+* set up localstorage api for storing note data
+* read localstorage to get notebooks
+* use localstorage to store new note entries
+* make notebook list slide from the top in mobile view (< 650px)

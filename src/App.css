@@ -41,13 +41,12 @@ body {
 .App {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: var(--panel-width) 1fr;
   overflow: hidden;
   position: relative;
 }
 
 .panel {
+  height: 100vh;
   overflow-y: auto;
 }
 
@@ -92,11 +91,13 @@ input, button {
 }
 
 button {
+  border-radius: .5em;
+  border-width: 2px;
   width: 2.2rem;
 }
 
 .panel {
-  border-right: .1em solid #777;
+
 }
 
 .header h1 {
@@ -141,7 +142,7 @@ button {
 
 .content-item {
   padding: 1em;
-  border: 1px solid #333;
+  border: 1px dashed #aaa;
 }
 
 .content-time {
@@ -161,6 +162,7 @@ button {
 }
 
 .content-input-button {
+  border-radius: 0;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
