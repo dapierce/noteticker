@@ -17,7 +17,7 @@ class App extends Component {
       <div className="App">
         <ReflexContainer orientation="vertical">
 
-          <ReflexElement className="left-pane" size="250" minSize="200" maxSize="600">
+          <ReflexElement className="left-panel" size="250" minSize="175" maxSize="600">
             <Panel />
           </ReflexElement>
 

@@ -9,18 +9,21 @@ class ContentInput extends Component {
     this.handleAddEntry = this.handleAddEntry.bind(this);
   }
 
-  handleEntry (e) {
-
+  handleEntry (event) {
+    this.setState({item: event.target.value});
   }
 
-  handleAddEntry (e) {
+  handleAddEntry (event) {
 
   }
 
   render() {
     return (
       <form className="content-input" onSubmit={this.handleAddEntry}>
-        <textarea className="content-input-textarea" onChange={this.handleEntry} spellcheck autoFocus placeholder="Type in a new thought..." />
+        <textarea className="content-input-textarea"
+          onChange={this.handleEntry}
+          spellcheck autoFocus placeholder="Type in a new thought..."
+        />
         <button className="content-input-button">Add</button>
       </form>
     );

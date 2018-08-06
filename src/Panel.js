@@ -6,13 +6,22 @@ class Panel extends Component {
   render() {
     return (
       <div className="panel">
-        <h1 className="header">Noteticker</h1>
-        <Search />
-        <NotebookList/>
-        <button className="button-new" title="Create a New Notebook">+ New Notebook</button>
-        <button className="button-prefs" title="Preferences">
-          <span role="img" aria-label="Wrench">🔧</span>
-        </button>
+        <div className="panel-heading">
+          <h1 className="header">Noteticker</h1>
+          <Search />
+        </div>
+        <div className="panel-notebook-list">
+          <NotebookList/>
+        </div>
+        <div className="panel-buttons">
+          <button className="button-new" title="Create a New Notebook">+ New Notebook</button>
+          <button className="button-prefs" title="Preferences">
+            <span role="img" aria-label="Wrench">🔧</span>
+          </button>
+          <button className="button-help" title="Help">
+            <span role="img" aria-label="Question Mark">❔</span>
+          </button>
+        </div>
       </div>
     );
   }

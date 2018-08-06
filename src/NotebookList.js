@@ -12,6 +12,18 @@ class NotebookList extends Component {
         <ul className="list-notebooks">
           <NotebookListItem />
           <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
+          <NotebookListItem />
         </ul>
       </div>
     );
