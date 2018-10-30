@@ -15,10 +15,10 @@ class Panel extends Component {
         </div>
         <div className="panel-buttons">
           <button className="button-new" title="Create a New Notebook">+ New Notebook</button>
-          <button className="button-prefs" title="Preferences">
+          <button className="button-prefs square" title="Preferences">
             <span role="img" aria-label="Wrench">🔧</span>
           </button>
-          <button className="button-help" title="Help">
+          <button className="button-help square" title="Help">
             <span role="img" aria-label="Question Mark">❔</span>
           </button>
         </div>

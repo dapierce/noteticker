@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import uuid from 'uuid/v1';
+
 import ContentItem from './ContentItem.js';
 import ContentInput from './ContentInput.js';
 
@@ -9,11 +11,23 @@ class Content extends Component {
   }
 
   handleAddContent(contentText, isTodo) {
-    // placeholder -- gets input from ContentInput and creates a content item
-    // uuid, timestamp, notebook as well as user input
+    // this.setState({
+    //   notebook: [
+    //     ...this.state.notebook,
+    //     {
+    //       id: uuid(),
+    //       text: contentText,
+    //       timestamp: Date.now,
+    //       isTask: false,
+    //       isComplete: false,
+    //       taskCompleteTimestamp: undefined
+    //     }
+    //   ]
+    // });
   }
 
   render() {
+    
     return (
       <div className="content">
         <div className="content-items">
